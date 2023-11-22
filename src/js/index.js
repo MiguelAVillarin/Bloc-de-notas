@@ -74,8 +74,6 @@ function createID() {
 function updateDatos(id){
     let texto=document.getElementById(`texto${id}`).value;
     let color=document.getElementById(`colorPicker${id}`).value;
-    console.log(color);
-    console.log(texto);
     let notaUpdate={
         id: `${id}`,
         color: `${color}`,
@@ -134,7 +132,6 @@ function removeNota(id){
     dbManager.open().then(() => {
         dbManager.delete(id)
             .then(() => {
-                console.log(id);
             })
             .catch((error) => {
                 console.error("Error addData: " + error);
