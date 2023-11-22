@@ -1,0 +1,137 @@
+:root {
+  --color-borde: #e66465;
+  --color-fondo: #9198e5;
+  --color-barra: rgb(255, 232, 99);
+}
+
+html {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(var(--color-borde), var(--color-fondo));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+header {
+  margin: 2vw;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+* {
+  scrollbar-width: 20px;
+  scrollbar-color: var(--color-barra) var(--color-fondo);
+}
+
+*::-webkit-scrollbar {
+  width: 20px;
+}
+
+*::-webkit-scrollbar-track {
+  background: linear-gradient(var(--color-borde), var(--color-fondo));
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-barra);
+  border-radius: 20px;
+  border: 3px solid var(--color-barra);
+}
+
+@font-face {
+  font-family: 'Rocher';
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+h1 {
+  margin: 0;
+}
+
+.mint {
+  font-family: Rocher;
+  font-size: 3vw;
+}
+
+.part2>button {
+  padding: 1vh;
+  border: 2px solid #513D32;
+  border-radius: 10px;
+  background-color: #F5CA56;
+}
+
+.nota {
+  width: 400px;
+  height: 400px;
+  background-color: rgb(255, 241, 163);
+  border: black 2px solid;
+  border-radius: 5px;
+}
+
+.headerNota {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  border-bottom: black 2px solid;
+  border-radius: 3px;
+}
+
+.buttomDelete {
+  background-color: rgba(255, 222, 173, 0);
+  border: 0;
+  margin-right: 2%;
+}
+
+.basuraIcon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  border: black 2px solid;
+}
+
+.colorPicker {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+label:hover{
+  cursor: pointer;
+}
+
+.HeaderText{
+  background-color: #ffffff00;
+  border: 0;
+}
+
+.texto>textarea {
+  outline: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2rem;
+  border: none;
+  height: 355px;
+  width: 100%;
+  padding: 20px;
+  background-color: #ecf3af;
+  resize: none;
+}
+
+main{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3vw;
+  gap: 2vw;
+}
